@@ -1,0 +1,37 @@
+name: Install Cometopi7 from ZIP
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  install:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Unpack initial website files
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f cometopi7-v5_4-upload.zip || { echo "The ZIP file is missing"; exit 1; }
+          test ! -e public/index.html || { echo "Website is already installed. No files changed."; exit 1; }
+          unzip -q cometopi7-v5_4-upload.zip
+          test -f public/index.html
+          test -f functions/api/publish.js
+          test -f package.json
+          rm cometopi7-v5_4-upload.zip
+      - name: Check existing app tests
+        run: npm test
+      - name: Save unpacked files to GitHub
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Install Cometopi7 v5.4 website from ZIP"
+          git push
