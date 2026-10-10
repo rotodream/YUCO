@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "articles": [
+    {
+      "id": "7c2197326a8acaeb",
+      "sha256": "7c2197326a8acaebaa849a3dd61d811c9c7a00071c0c10feb1dad513d13e2ded",
+      "title": "2026/10/10 YouTubeコメントトピックス｜日本語系動画・注目度が高い順",
+      "date": "2026-10-10",
+      "createdAt": "2026-10-10T12:50:29+09:00",
+      "summary": "返信が集まったコメントから、その日に反応が集まっていた論点をまとめました。人気動画・日本語系動画の注目度が高い順。",
+      "path": "/articles/2026/10/youtube_comment_topics_web_2026-10-10_12-50-29-330.html",
+      "thumbnail": "https://i.ytimg.com/vi/xdsbfDbaqRU/hqdefault.jpg",
+      "categories": [
+        "ゲーム",
+        "音楽",
+        "エンターテイメント"
+      ],
+      "topics": 20,
+      "bytes": 41884,
+      "language": "ja",
+      "visible": true,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=sNnJ5dzHe3I",
+      "youtubePublishedDate": "2026-10-09"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const js=fs.readFileSync('public/js/site.js','utf8');
+const page=fs.readFileSync('public/index.html','utf8');
+const qa=fs.readFileSync('public/embed-test.html','utf8');
+const data=JSON.parse(fs.readFileSync('public/data/articles.json','utf8'));
+assert.match(js,/frame\.referrerPolicy='strict-origin-when-cross-origin'/);
+assert.match(js,/youtube-nocookie\.com\/embed/);
+assert.doesNotMatch(js,/new YT\.Player|playerVars|youtube-player-notice/);
+assert.match(js,/panel\.replaceChildren\(frame\)/);
+assert.match(page,/meta name="referrer" content="strict-origin-when-cross-origin"/);
+assert.match(qa,/sNnJ5dzHe3I/);
+assert.equal(data.articles[0].youtubeVideoUrl,'https://www.youtube.com/watch?v=sNnJ5dzHe3I');
+console.log('YouTube iframe layout/restored embed checks passed');

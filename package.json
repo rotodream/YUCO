@@ -1,0 +1,8 @@
+{
+  "name": "cometopi7-directory-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node tests/publisher.test.mjs && node tests/monetization.test.mjs && node tests/youtube-link.test.mjs && node tests/seo.test.mjs && node tests/monthly-pagination.test.mjs && node tests/auth-and-publish.test.mjs && node tests/contact-and-traffic.test.mjs && node tests/embed-player.test.mjs"
+  }
+}

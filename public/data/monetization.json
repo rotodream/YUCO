@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "updatedAt": null,
+  "sponsor": {
+    "contactEmail": "",
+    "message": "広告掲載やスポンサー協力のご相談を受け付けています。"
+  },
+  "featuredPaths": [],
+  "ads": [
+    {
+      "id": "top",
+      "active": false,
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "linkUrl": "",
+      "alt": "",
+      "startsOn": "",
+      "endsOn": ""
+    },
+    {
+      "id": "middle",
+      "active": false,
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "linkUrl": "",
+      "alt": "",
+      "startsOn": "",
+      "endsOn": ""
+    },
+    {
+      "id": "bottom",
+      "active": false,
+      "title": "",
+      "description": "",
+      "imageUrl": "",
+      "linkUrl": "",
+      "alt": "",
+      "startsOn": "",
+      "endsOn": ""
+    }
+  ]
+}

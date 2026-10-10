@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#fff8fc">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="コメトピ7">
+  <meta property="og:title" content="コメトピ7｜YouTube コメントトピックス">
+  <meta property="og:description" content="コメトピ7はYouTubeの注目コメントを日付・カテゴリーで読み返せるアーカイブです。">
+  <link rel="alternate" type="application/rss+xml" title="コメトピ7 新着記事" href="/feed.xml">
+  <meta name="description" content="コメトピ7｜YouTubeで話題になったコメントのトピックスを、日ごと・カテゴリーごとに紹介するアーカイブ。">
+  <title>コメトピ7｜YouTube コメントトピックス</title>
+  <link rel="stylesheet" href="/css/site.css">
+  <script src="/js/site.js" defer></script><script src="/js/monetization.js" defer></script><script src="/js/traffic.js" defer></script>
+</head>
+<body>
+  <header class="site-head" id="top">
+    <div class="head-inner">
+      <a class="wordmark" href="/" aria-label="コメトピ7 トップ"><span class="head-gem">✦</span> コメトピ7 <small>COMMENT TOPICS</small></a>
+      <nav aria-label="メインナビゲーション"><a href="https://www.youtube.com/@cometopi7" target="_blank" rel="noopener" class="youtube-nav">公式YouTube ↗</a><a href="#articles">新着記事</a><a href="#search">記事を探す</a><a href="/archive">過去記事一覧</a><a href="#about">コメトピ7について</a><a href="/sponsor.html">広告掲載</a><a href="/contact.html">お問い合わせ</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="コメトピ7のご紹介">
+      <div class="hero-image" role="img" aria-label="5人の女の子とコメトピ7のタイトルが描かれたメインビジュアル"></div>
+      <div class="hero-bottom">
+        <div class="hero-title">
+          <span class="eyebrow">YouTube COMMENT TOPICS</span>
+          <h1>コメントから見えてくる、<br>今日の話題。</h1>
+          <p>YouTubeの動画に寄せられたコメントから、反応が集まったトピックスをお届けします。気になる話題を、毎日の記事でチェック。</p>
+          <div class="hero-actions"><a class="main-button" href="#articles">最新の記事を見る <span aria-hidden="true">↗</span></a><a class="youtube-channel-button" href="https://www.youtube.com/@cometopi7" target="_blank" rel="noopener">▶ 公式YouTubeチャンネル</a></div>
+        </div>
+        <img src="/assets/logo.png" class="hero-logo" alt="コメトピ7 YouTube コメントトピックス" fetchpriority="high">
+      </div>
+    </section>
+
+    <div class="site-container">
+      <div class="ad-slot ad-wide" id="ad-top" hidden aria-label="広告"></div>
+      <section class="quick-stats" aria-label="アーカイブの概要">
+        <div><span>公開記事数</span><strong id="article-total">—</strong><small>記事</small></div>
+        <div><span>掲載トピックス</span><strong id="topic-total">—</strong><small>件</small></div>
+        <div><span>最新更新日</span><strong id="last-updated" class="date-size">—</strong></div>
+      </section>
+
+      <section class="discovery-band" aria-label="アクセス情報と注目の記事">
+        <div class="discovery-info">
+          <span class="eyebrow">SITE INFO</span><h2>コメトピ7のアクセス情報</h2>
+          <div class="counter-metrics" aria-label="Cloudflareのページ表示回数">
+            <div class="counter-item"><small>今日のPV</small><strong id="traffic-today">—</strong></div>
+            <div class="counter-item"><small>昨日のPV</small><strong id="traffic-yesterday">—</strong></div>
+            <div class="counter-item"><small>直近30日PV</small><strong id="traffic-month">—</strong></div>
+          </div>
+          <small id="traffic-status" role="status">計測設定を確認しています…</small>
+          <small>Cloudflare計測値を利用します。PVは人数や開設以来の累計とは異なります。</small>
+        </div>
+        <div class="discovery-featured" id="featured-area"><span class="eyebrow">EDITOR'S PICKS</span><h2>注目の記事</h2><p class="featured-caption">現在は編集者が選ぶおすすめ記事です。閲覧数による人気順位ではありません。</p><div id="featured-list" class="featured-list"></div></div>
+      </section>
+      <div class="ad-slot ad-horizontal" id="ad-middle" hidden aria-label="広告"></div>
+      <section class="section article-section" id="articles">
+        <div class="section-heading"><div><span class="eyebrow">LATEST STORIES</span><h2>新着トピックス</h2><p>直近約30日分の記事を新しい日付順に表示。同じ日の複数記事もすべて掲載します。</p></div><span class="section-sparkle" aria-hidden="true">✧</span></div>
+        <div class="search-panel" id="search">
+          <div class="field wide"><label for="keyword">キーワードで探す</label><input id="keyword" type="search" placeholder="記事名、動画カテゴリーなど" autocomplete="off"></div>
+          <div class="field"><label for="category">カテゴリー</label><select id="category"><option value="">すべて</option></select></div>
+          <div class="field"><label for="month">年月</label><select id="month"><option value="">すべて</option></select></div>
+          <button id="clear-filters" class="clear-button" type="button">条件をクリア</button>
+        </div>
+        <div class="result-line"><span id="result-count">記事を読み込み中です…</span><span class="result-detail">約30日分ずつ、日付順に表示</span></div>
+        <div class="article-grid" id="article-list" aria-live="polite"><div class="loading-state">公開記事の一覧を読み込んでいます…</div></div>
+        <div class="pagination" id="pagination" aria-label="記事一覧のページ送り"></div>
+        <p class="archive-helper">すべての過去記事を日付順で見る場合は <a href="/archive">過去記事一覧</a> をご利用ください。</p>
+      </section>
+
+      <div class="ad-slot ad-wide" id="ad-bottom" hidden aria-label="広告"></div>
+      <section class="section intro-section" id="about">
+        <div class="intro-image"><img src="/assets/studio-pink.png" alt="ピンクとラベンダーのスタジオ" loading="lazy"></div>
+        <div class="intro-body"><span class="eyebrow">ABOUT COMETOPI 7</span><h2>YouTubeのコメント欄にも、<br>いろいろな物語があります。</h2><p>コメトピ7は、公開されているYouTube動画のコメントから、返信が集まったトピックスを取り上げるサイトです。</p><p>記事中の再生数や登録者数などは、データを取得した時点の値です。紹介するランキングは取得条件に基づくもので、YouTube全体を網羅したものではありません。</p></div>
+      </section>
+      <section class="sponsor-invitation" id="sponsor"><div><span class="eyebrow">FOR PARTNERS</span><h2>コメトピ7の広告・スポンサー掲載</h2><p>記事のテーマに合う広告や、ご案内したい商品・サービスのバナーを掲載できます。</p></div><a class="main-button" href="/sponsor.html">広告掲載のご案内 ↗</a></section>
+      <section class="studio-strip" aria-label="コメトピ7のスタジオビジュアル"><img src="/assets/studio-sky.png" alt="パステルカラーのステージ" loading="lazy"><img src="/assets/studio-mint.png" alt="ミントブルーのスタジオ" loading="lazy"></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="footer-inner"><img src="/assets/logo.png" alt="コメトピ7"><div><p>コメトピ7 — YouTube コメントトピックス</p><small>記事中のコメント・画像は各公開元へのリンクとともに掲載しています。</small></div><a href="https://www.youtube.com/@cometopi7" class="admin-link" target="_blank" rel="noopener">公式YouTube ↗</a><a href="/sponsor.html" class="admin-link">スポンサー募集</a><a href="/archive" class="admin-link">過去記事一覧</a><a href="/admin.html" class="admin-link">管理者入口</a></div></footer>
+</body>
+</html>
