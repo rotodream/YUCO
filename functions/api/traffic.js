@@ -61,15 +61,13 @@ export async function onRequestGet({ env }) {
     const data = json.data?.viewer?.accounts?.[0];
     if (!data) return unavailable('account_access');
 
-    // Adaptive データの標本補正を行う。結果は推定ページ表示回数。
+    // AdaptiveGroups の count はサンプリング補正済みの推定件数。
+    // sampleInterval を追加で掛けると二重補正になり過大表示する。
     const value = key => {
       const row = data[key]?.[0];
       if (!row) return 0;
       const count = Number(row.count);
-      const sampleInterval = Number(row.avg?.sampleInterval || 1);
-      return Math.round(Math.max(0, count) * (
-        Number.isFinite(sampleInterval) && sampleInterval > 0 ? sampleInterval : 1
-      ));
+      return Number.isFinite(count) ? Math.round(Math.max(0, count)) : 0;
     };
     return Response.json({
       ok: true, available: true,
