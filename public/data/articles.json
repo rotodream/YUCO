@@ -2,6 +2,25 @@
   "version": 1,
   "articles": [
     {
+      "id": "d52f2753095f7956",
+      "sha256": "d52f2753095f795638f7f2dd8869a136a00da662fbcf9006007cb37574abb0b8",
+      "title": "2026/10/11 YouTubeコメントトピックス｜日本語系動画・注目度が高い順",
+      "date": "2026-10-11",
+      "createdAt": "2026-10-11T04:55:04.676Z",
+      "summary": "返信が集まったコメントから、その日に反応が集まっていた論点をまとめました。",
+      "path": "/articles/2026/10/2026-10-11_d52f2753095f7956.html",
+      "thumbnail": "https://i.ytimg.com/vi/rGq0c9Sph0c/hqdefault.jpg",
+      "categories": [
+        "エンターテイメント"
+      ],
+      "topics": 20,
+      "bytes": 37710,
+      "language": "ja",
+      "visible": true,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=9y9yK6ib-Nc",
+      "youtubePublishedDate": "2026-10-11"
+    },
+    {
       "id": "7c2197326a8acaeb",
       "sha256": "7c2197326a8acaebaa849a3dd61d811c9c7a00071c0c10feb1dad513d13e2ded",
       "title": "2026/10/10 YouTubeコメントトピックス｜日本語系動画・注目度が高い順",
@@ -22,5 +41,6 @@
       "youtubeVideoUrl": "https://www.youtube.com/watch?v=sNnJ5dzHe3I",
       "youtubePublishedDate": "2026-10-09"
     }
-  ]
+  ],
+  "updatedAt": "2026-10-11T04:55:05.416Z"
 }
