@@ -2,6 +2,26 @@
   "version": 1,
   "articles": [
     {
+      "id": "5141358a2083ff74",
+      "sha256": "5141358a2083ff74875ab1cf74f7320721466219f841b8dd12c01f4bea5b8375",
+      "title": "2026/10/26 YouTubeコメントトピックス｜日本語系動画・返信数が多い順",
+      "date": "2026-10-26",
+      "createdAt": "2026-10-25T16:49:02.333Z",
+      "summary": "返信が集まったコメントから、その日に反応が集まっていた論点をまとめました。",
+      "path": "/articles/2026/10/2026-10-26_5141358a2083ff74.html",
+      "thumbnail": "https://i.ytimg.com/vi/SWzfm9PED6s/hqdefault.jpg",
+      "categories": [
+        "音楽",
+        "ゲーム"
+      ],
+      "topics": 20,
+      "bytes": 40750,
+      "language": "ja",
+      "visible": true,
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=SBxRO1pFXfs",
+      "youtubePublishedDate": "2026-10-26"
+    },
+    {
       "id": "cb0e1758fbd337d2",
       "sha256": "cb0e1758fbd337d2ee5a8decf15a32ee88c656e402760efeafe4861627ce4fef",
       "title": "2026/10/23 YouTubeコメントトピックス｜日本語系動画・注目度が高い順",
@@ -169,5 +189,5 @@
       "youtubePublishedDate": "2026-10-09"
     }
   ],
-  "updatedAt": "2026-10-23T07:06:10.301Z"
+  "updatedAt": "2026-10-25T16:49:03.160Z"
 }
